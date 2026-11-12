@@ -668,7 +668,9 @@ end
 local function CacheProfileLayouts(profile)
     wipe(cleanedLayoutNames)
     layoutProfile = profile
-    if not profile or (AutoSetup.hasControllerInterface and profile.nativeControllerSupport) then
+    -- Controller profiles still apply a layout when one is named: saved layouts made in controller
+    -- mode are selectable like any other. A blank name still leaves Edit Mode to the client.
+    if not profile then
         baseLayoutClean, targetLayoutClean = nil, nil
     else
         baseLayoutClean = CleanLayoutName(profile.editLayoutBase)

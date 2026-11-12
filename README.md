@@ -89,10 +89,10 @@ In the options panel:
    - Any descriptive name (e.g. `PC 1440p`, `Steam Deck`, `Laptop`).
 3. **Base Edit Mode layout**
    - Either type the layout name or click **Pick Layout** to choose from existing Edit Mode layouts.
-   - Leave blank if this profile has native controller support enabled: controller mode uses its own hidden default layout that doesn't appear in the layout picker, and a keyboard/mouse layout can't be applied while controller mode is active anyway. AutoSetup skips Edit Mode entirely for such profiles and lets the client manage it.
+   - With native controller support enabled, you can name a layout you saved in controller mode and AutoSetup switches to it like any other. Leave it blank to let the client use controller mode's own default layout; AutoSetup then leaves Edit Mode alone.
 4. **Target layout (optional)**
    - Optional alternate layout used while in combat or when you have a target.
-   - Leave blank if you only want one layout for this resolution, or if this profile has native controller support enabled (same reason as above).
+   - Leave blank if you only want one layout for this resolution.
 5. **UI Scale**
    - Tick **Set UI scale** and adjust the slider for a per‑profile UI scale. Unticked leaves the scale alone.
 6. **Damage Meter**
